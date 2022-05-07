@@ -1,0 +1,20 @@
+[package]
+name = "xoodoo-p"
+version = "0.1.0"
+authors = ["Coda Hale <coda.hale@gmail.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "High-performance implementation of the Xoodoo-p permutation."
+homepage = "https://github.com/codahale/xoodoo-p"
+documentation = "https://docs.rs/xoodoo-p/"
+keywords = ["crypto", "xoodoo", "xoodoo-p", "no-std"]
+categories = ["cryptography", "no-std"]
+readme = "README.md"
+include = ["benches/**/*.rs", "src/**/*.rs", "tests/**/*.rs", "README.md", "LICENSE-APACHE", "LICENSE-MIT"]
+
+[dev-dependencies]
+criterion = { version = "0.3.5", features = ["html_reports"] }
+
+[[bench]]
+name = "benchmarks"
+harness = false
